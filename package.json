@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "datatables.net-dt": "^2.3.2",
+    "readline-sync": "^1.4.10"
+  }
+}
