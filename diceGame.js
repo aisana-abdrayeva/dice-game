@@ -67,8 +67,8 @@ class DiceConfigParser {
         }
         this.diceConfig = this.argv.map((str) => {
             const parts = str.split(",").map(Number);
-            if (parts.length < 2 || parts.some(isNaN)) {
-                throw new Error(`Invalid dice configuration: "${str}". Expected comma-separated numbers.`);
+            if (parts.length != 6 || parts.some(isNaN)) {
+                throw new Error(`Invalid dice configuration: "${str}". Expected comma-separated 6 numbers.`);
             }
             return parts;
         }) 
